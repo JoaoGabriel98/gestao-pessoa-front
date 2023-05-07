@@ -1,0 +1,29 @@
+
+<div class="uk-flex uk-flex-between margin-top">
+  <h3>Cadastro de Pessoas</h3>
+  <button routerLink="people/new" class="cadastro-pessoas uk-flex uk-flex-between">Novo Cadastro  <span class="arrow"></span></button>
+</div>
+
+<table class="uk-table uk-table-striped uk-table-justify">
+  <caption></caption>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>E-mail</th>
+      <th>Telefone</th>
+      <th colspan="2">Data de Nascimento</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let person of people" >
+      <td>{{ person.name }}</td>
+      <td>{{ person.email }}</td>
+      <td>{{ person.phone }}</td>
+      <td>{{ person.birth_date }}</td>
+      <td class="uk-flex uk-flex-between">
+        <img class="pincel" src="../../assets/img/pincel.png" routerLink="people/edit/{{ person.id }}" />
+        <img class="lixeira" src="../../assets/img/lixeira.png" (click)="deletePerson(person.id)" />
+      </td>
+    </tr>
+  </tbody>
+</table>

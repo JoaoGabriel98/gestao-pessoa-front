@@ -1,0 +1,83 @@
+h3{
+    font-family: 'JetBrains Mono', monospace;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 58px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+
+.cadastro-pessoas{
+  /* Button */
+  box-sizing: border-box;
+
+  width: 212.63px;
+  height: 52px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 9px 20px;
+
+  top: 212.33px;
+  background: transparent;
+  border: 1px solid #FFFFFF;
+  border-radius: 100px;
+  color: #FFFFFF;
+
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+.arrow{
+  background: url('../../assets/img/Vector.png');
+  width: 25.63px;
+  height: 12px;
+}
+
+.margin-top{
+  margin-top: 50px;
+}
+
+thead{
+  background: #142025;
+}
+
+thead th{
+  border: 1px solid #142025;
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 131%;
+  text-transform: lowercase;
+  color: #FFFFFF !important;
+  padding-left: 20px;
+}
+
+td{
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  background-color: #FFFFFF !important;
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 131%;
+  color: #131E23;
+}
+
+.pincel, .lixeira{
+  cursor: pointer;
+}

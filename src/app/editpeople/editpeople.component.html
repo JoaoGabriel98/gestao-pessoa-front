@@ -1,0 +1,40 @@
+<div class="container">
+  <h3>Editar Cadastro</h3>
+
+  <form *ngIf="personForm" [formGroup]="personForm" (ngSubmit)="onSubmit()" class="uk-form-stacked">
+    <div class="uk-margin">
+      <label class="uk-form-label" for="form-stacked-text">Nome</label>
+      <div class="uk-form-controls">
+        <input class="uk-input" id="name" type="text" placeholder="Maria" formControlName="name">
+      </div>
+    </div>
+
+    <div class="uk-margin">
+      <label class="uk-form-label" for="form-stacked-text">Email</label>
+      <div class="uk-form-controls">
+        <input class="uk-input" id="email" type="text" placeholder="Maria@gmail.com" formControlName="email">
+      </div>
+    </div>
+
+    <div class="uk-margin">
+      <label class="uk-form-label" for="form-stacked-text">Telefone</label>
+      <div class="uk-form-controls">
+        <input class="uk-input" id="phone" type="text" placeholder="(48) 98826578" formControlName="phone">
+      </div>
+    </div>
+
+    <div class="uk-margin">
+      <label class="uk-form-label" for="form-stacked-text">Data de Nascimento</label>
+      <div class="uk-form-controls">
+        <input class="uk-input" id="birth_date" type="date" placeholder="25/05/1989" formControlName="birth_date">
+      </div>
+    </div>
+
+    <div class="uk-margin" style="text-align: center;">
+      <div class="uk-form-controls">
+        <button class="uk-input" id="submit" type="submit">Salvar alterações</button>
+      </div>
+      <a class="voltar" routerLink="">Voltar</a>
+    </div>
+  </form>
+</div>

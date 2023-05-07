@@ -1,0 +1,70 @@
+.container{
+  width: 50%;
+  margin-top: 50px;
+  padding: 42px 30px;
+  padding-bottom: 20px;
+  gap: 42px;
+
+  background: #FFFFFF;
+
+  box-shadow: 0px 4px 8px rgba(41, 41, 41, 0.08);
+  border-radius: 10px;
+}
+
+h3{
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 100%;
+  color: #292929;
+}
+
+label{
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  text-transform: capitalize;
+
+  color: #707070;
+}
+
+input[type="text"], input[type="date"]{
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 14px;
+  background: #F5F5F5;
+  border-radius: 2px;
+}
+
+button{
+  background: #131E23;
+  color: #FFFFFF;
+  border-radius: 100px;
+  cursor: pointer;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 0px;
+  padding: 30px 20px;
+  margin-bottom: 20px;
+}
+
+.voltar{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  text-align: center;
+
+  color: #707070;
+}
